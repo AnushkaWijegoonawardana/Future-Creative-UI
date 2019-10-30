@@ -201,7 +201,7 @@
     // Hero-Banner Content
     .hero-banner-content {
       .btn-container {
-          flex-direction: column;
+        flex-direction: column;
         .btn {
           margin: 1rem 0;
         }
@@ -210,3 +210,124 @@
   }
 }
 // ========== Page Hero Banner & The Menu ==========
+
+// ========== About Us Section ==========
+.about-us {
+  background-image: url("../images/Aboutus-Banner.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 60vh;
+
+  .aboutus-content-container {
+    height: 100%;
+    min-height: 60vh;
+    width: 40%;
+    background-color: $blue-gradient;
+    padding: 4rem 8rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+
+    p {
+      color: $white-theme;
+      margin-bottom: 3rem;
+      font-size: 1.2rem;
+    }
+
+    .btn-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+      width: 90%;
+    }
+  }
+}
+
+@include largScreens {
+  .about-us {
+    min-height: 60vh;
+
+    .aboutus-content-container {
+      height: 100%;
+      min-height: 60vh;
+      width: 60%;
+      padding: 2rem 4rem;
+
+      .btn-container {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@include normalScreens {
+  .about-us {
+    .aboutus-content-container {
+      height: 100%;
+      width: 100%;
+      align-items: center;
+
+      .hero-header {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      .btn-container {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@include smallScreens {
+  .about-us {
+    .aboutus-content-container {
+      height: 100%;
+      width: 100%;
+      align-items: center;
+      padding: 1rem 2rem;
+
+      .hero-header {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      .btn-container {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include exSmallScreens {
+  .about-us {
+    .aboutus-content-container {
+      height: 100%;
+      width: 100%;
+      align-items: center;
+      padding: 1rem 2rem;
+
+      .hero-header {
+        text-align: center;
+      }
+
+      p {
+        text-align: center;
+      }
+
+      .btn-container {
+        width: 100%;
+      }
+    }
+  }
+}
+// ========== About Us Section ==========
