@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800|Open+Sans:300,400,700|Poppins:700&display=swap');
+// font-family: 'Montserrat', sans-serif;
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Poppins', sans-serif;
+
+@import 'function';
+
+
+// General Style Resettings
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $black-theme;
+    background-color: $white-theme;
+    overflow-x: hidden;
+}
+
+h1,h2,h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    line-height: 2;
+}
+
+a {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+// General Style Resettings
+
+.box-container {
+    width: 80%;
+    margin: auto;
+}
+
+// Text Styles
+.hero-header {
+    font-size: 2rem;
+    color: $white-theme;
+    text-transform: uppercase;
+    line-height: 2;
+    letter-spacing: 2px;
+    margin-bottom: 2rem;
+}
+
+@include smallScreens {
+    .hero-header {
+        font-size: 1.5rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@include exSmallScreens {
+    .hero-header {
+        font-size: 1.5rem;
+        line-height: 1.6;
+        margin-bottom: 1.5rem;
+    }
+}
+// Text Styles
+
+// Button Styles
+.btn {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    text-transform: capitalize;
+    border-radius: 50px;
+
+    &-primary {
+        background-color: $blue-theme;
+        color: $white-theme;
+        border: 2px solid $blue-theme;
+    }
+
+    &-secondary {
+        background-color: transparent;
+        border: 2px solid $white-theme;
+        color: $white-theme;
+    }
+}
+
+@include smallScreens {
+    .btn {
+        padding: 0.6rem 1rem;
+    }
+}
+
+@include exSmallScreens {
+    .btn {
+        padding: 0.6rem 1rem;
+    }
+}
+// Button Styles
+
+// Stiky Header General Styles
+/* The sticky class is added to the header with JS when it reaches its scroll position */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $white-theme;
+  }
+  
+  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+  .sticky + .content {
+    padding-top: 102px;
+  }
+// Stiky Header General Styles
