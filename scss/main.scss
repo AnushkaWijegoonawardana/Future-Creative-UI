@@ -314,7 +314,7 @@
       height: 100%;
       width: 100%;
       align-items: center;
-      padding: 1rem 2rem;
+      padding: 2rem;
 
       .hero-header {
         text-align: center;
@@ -325,7 +325,11 @@
       }
 
       .btn-container {
-        width: 100%;
+        flex-direction: column;
+
+        .btn {
+          margin: 1rem;
+        }
       }
     }
   }
