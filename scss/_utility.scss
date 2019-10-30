@@ -86,6 +86,7 @@ a {
     text-transform: capitalize;
     border-radius: 50px;
     min-width: 200px;
+    text-align: center;
 
     &-primary {
         background-color: $blue-theme;
@@ -138,3 +139,37 @@ a {
     padding-top: 102px;
   }
 // Stiky Header General Styles
+
+
+// Section Header
+.section-header {
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .section-headline {
+        font-family: 'Montserrat', sans-serif;
+        text-transform: capitalize;
+        font-weight: 800;
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+    .theme-line {
+        width: 200px;
+        height: 5px;
+        background-color: $blue-theme;
+        margin-bottom: 2rem;
+    }
+
+    .section-para {
+        font-size: 1.5rem;
+        font-family: 'Open Sans', sans-serif;
+        line-height: 40px;
+        font-weight: 400;
+        margin-bottom: 2rem;
+    }
+}

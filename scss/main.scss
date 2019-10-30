@@ -335,3 +335,41 @@
   }
 }
 // ========== About Us Section ==========
+
+// ========== Our World Section ==========
+.our-world {
+  padding: 5rem 0;
+
+  .box-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .service-container {
+      padding: 3rem 0;
+
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 2rem;
+
+        .service-box   {
+          padding: 2rem;
+          min-height: 300px;
+          background-color: $light-hover;
+          color: $black-theme;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          &:hover {
+            background-color: $blue-gradient;
+            color: $white-theme;
+          }
+        }
+      }
+    }
+  }
+}
+// ========== Our World Section ==========
