@@ -325,7 +325,11 @@
       }
 
       .btn-container {
-        width: 100%;
+        flex-direction: column;
+
+        .btn {
+          margin: 1rem;
+        }
       }
     }
   }
