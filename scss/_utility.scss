@@ -51,6 +51,14 @@ a {
     margin-bottom: 2rem;
 }
 
+.main-head {
+    font-size: 2.2rem;
+    line-height: 50px;
+    text-transform: uppercase;
+    color: $white-theme;
+    margin-bottom: 2rem;
+}
+
 @include smallScreens {
     .hero-header {
         font-size: 1.5rem;
@@ -69,6 +77,7 @@ a {
 // Text Styles
 
 // Button Styles
+
 .btn {
     padding: 1rem 2rem;
     font-size: 1rem;
@@ -76,6 +85,7 @@ a {
     font-weight: 400;
     text-transform: capitalize;
     border-radius: 50px;
+    min-width: 200px;
 
     &-primary {
         background-color: $blue-theme;
@@ -88,6 +98,15 @@ a {
         border: 2px solid $white-theme;
         color: $white-theme;
     }
+
+    &-dark {
+        background-color: $black-theme;
+        color: $white-theme;
+        border: 2px solid $black-theme;
+    }
+}
+
+@include largScreens {
 }
 
 @include smallScreens {
@@ -99,6 +118,7 @@ a {
 @include exSmallScreens {
     .btn {
         padding: 0.6rem 1rem;
+        min-width: 150px;
     }
 }
 // Button Styles
@@ -110,6 +130,7 @@ a {
     top: 0;
     width: 100%;
     background-color: $white-theme;
+    z-index: 1;
   }
   
   /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */

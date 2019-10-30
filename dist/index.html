@@ -19,15 +19,19 @@
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/hover.css" />
     <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- Page Overlayer Menu -->
     <header class="overlayer-menu" id="overlayer-menu">
       <div class="box-container">
         <!-- Button to close the overlay navigation -->
-        <a href="javascript:void(0)" class="closebtn hvr-grow" onclick="closeNav()"
-          ><img src="images/close-menu.png" alt=""></a
-        >
+        <a
+          href="javascript:void(0)"
+          class="closebtn hvr-grow"
+          onclick="closeNav()"
+          ><img src="images/close-menu.png" alt=""
+        /></a>
 
         <!-- Overlay content -->
         <div class="overlay-navigation">
@@ -56,7 +60,10 @@
           <a href="#portfolio" class="hvr-grow">Portfolio</a>
           <a href="#plans" class="hvr-grow">Plans</a>
           <a href="#contact" class="hvr-grow">Contact</a>
-          <a href="javascript:void(0)" class="menu-icon hvr-grow" onclick="openNav()"
+          <a
+            href="javascript:void(0)"
+            class="menu-icon hvr-grow"
+            onclick="openNav()"
             ><img src="images/menu-icon.png" alt=""
           /></a>
         </nav>
@@ -79,8 +86,35 @@
     </div>
     <!-- Page Hero Banner & The Menu -->
 
+    <!-- About Us Section -->
+    <section class="about-us" id="about-us">
+      <div class="aboutus-content-container" data-aos="fade-right">
+        <h1 class="hero-header animated slideInLeft">
+          about our <br />
+          agency
+        </h1>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting
+          industry. Lorem Ipsum has been the industryLorem Ipsum is simply dummy
+          text of the printing and typesetting industry.
+        </p>
+        <div class="btn-container">
+          <a href="#portfolio" class="btn btn-dark hvr-pop">portfolio</a>
+          <a href="#portfolio" class="btn btn-secondary hvr-pop">Explore</a>
+        </div>
+      </div>
+    </section>
+    <!-- About Us Section -->
+
     <!-- Script Files -->
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      // Animation On Scroll
+      AOS.init({
+        duration: 1000
+      });
+    </script>
     <!-- Script Files -->
   </body>
 </html>
