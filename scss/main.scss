@@ -156,6 +156,7 @@
       .header-navigation {
         a {
           display: none;
+          padding: 0;
         }
 
         .menu-icon {
@@ -190,6 +191,7 @@
       .header-navigation {
         a {
           display: none;
+          padding: 0;
         }
 
         .menu-icon {
@@ -354,7 +356,7 @@
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 2rem;
 
-        .service-box   {
+        .service-box {
           padding: 2rem;
           min-height: 300px;
           background-color: $light-hover;
@@ -367,7 +369,128 @@
             background-color: $blue-gradient;
             color: $white-theme;
           }
+
+          .service-headlie {
+            font-size: 21px;
+            font-family: "Poppins", sans-serif;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+          }
         }
+      }
+    }
+
+    .btn {
+      margin: 1rem;
+    }
+  }
+}
+
+@include largScreens {
+  .our-world {
+    padding: 4rem 0;
+
+    .box-container {
+      .service-container {
+        padding: 2rem 0;
+
+        .services-grid {
+          grid-gap: 1rem;
+
+          .service-box {
+            padding: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include normalScreens {
+  .our-world {
+    padding: 2.5rem 0;
+
+    .box-container {
+      .service-container {
+        padding: 1.5rem 0;
+
+        .services-grid {
+          grid-gap: 1rem;
+          grid-template-columns: repeat(2, 1fr);
+
+          .service-box {
+            padding: 1rem;
+
+            .service-headlie {
+              font-size: 20px;
+              margin-bottom: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include smallScreens {
+  .our-world {
+    padding: 2rem 0;
+
+    .box-container {
+      .service-container {
+        padding: 1rem 0;
+
+        .services-grid {
+          grid-template-columns: 1fr;
+          grid-gap: 0.5rem;
+
+          .service-box {
+            padding: 1rem;
+            text-align: center;
+            min-height: 250px;
+
+            .service-headlie {
+              font-size: 1rem;
+              margin: 0.5rem;
+            }
+          }
+        }
+      }
+
+      .btn {
+        margin: 1rem;
+      }
+    }
+  }
+}
+
+@include exSmallScreens {
+  .our-world {
+    padding: 2rem 0;
+
+    .box-container {
+      .service-container {
+        padding: 1rem 0;
+
+        .services-grid {
+          grid-template-columns: 1fr;
+          grid-gap: 0.5rem;
+
+          .service-box {
+            padding: 1rem;
+            text-align: center;
+            min-height: 250px;
+
+            .service-headlie {
+              font-size: 1rem;
+              margin: 0.5rem;
+            }
+          }
+        }
+      }
+
+      .btn {
+        margin: 1rem;
       }
     }
   }
