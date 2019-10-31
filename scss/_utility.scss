@@ -173,3 +173,70 @@ a {
         margin-bottom: 2rem;
     }
 }
+
+@include normalScreens {
+    .section-header {
+        padding: 1.5rem;
+        width: 100%;
+    
+        .section-headline {
+            font-size: 2rem;
+            margin-bottom: 0.8rem;
+        }
+    
+        .theme-line {
+            margin-bottom: 1.5rem;
+        }
+    
+        .section-para {
+            font-size: 1.2rem;
+            margin-bottom: 1.5rem;
+            line-height: 30px;
+        }
+    }
+}
+
+@include smallScreens {
+    .section-header {
+        padding: 0;
+        width: 100%;
+    
+        .section-headline {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+    
+        .theme-line {
+            margin-bottom: 1rem;
+        }
+    
+        .section-para {
+            font-size: 1rem;
+            line-height: 24px;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+@include exSmallScreens {
+    .section-header {
+        padding: 0;
+        width: 100%;
+    
+        .section-headline {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+    
+        .theme-line {
+            margin-bottom: 1rem;
+        }
+    
+        .section-para {
+            font-size: 1rem;
+            line-height: 24px;
+            margin-bottom: 1rem;
+        }
+    }
+}
+// Section Header
