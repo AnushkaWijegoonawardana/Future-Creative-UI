@@ -1,242 +1,278 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,800|Open+Sans:300,400,700|Poppins:700&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700,800|Open+Sans:300,400,700|Poppins:700&display=swap");
 // font-family: 'Montserrat', sans-serif;
 // font-family: 'Open Sans', sans-serif;
 // font-family: 'Poppins', sans-serif;
 
-@import 'function';
-
+@import "function";
 
 // General Style Resettings
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-size: 1rem;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    line-height: 1.5;
-    color: $black-theme;
-    background-color: $white-theme;
-    overflow-x: hidden;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.5;
+  color: $black-theme;
+  background-color: $white-theme;
+  overflow-x: hidden;
 }
 
-h1,h2,h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    line-height: 2;
+h1,
+h2,
+h3 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  line-height: 2;
 }
 
 a {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
 }
 // General Style Resettings
 
 .box-container {
-    width: 80%;
-    margin: auto;
+  width: 80%;
+  margin: auto;
 }
 
 // Text Styles
 .hero-header {
-    font-size: 2rem;
-    color: $white-theme;
-    text-transform: uppercase;
-    line-height: 2;
-    letter-spacing: 2px;
-    margin-bottom: 2rem;
+  font-size: 2rem;
+  color: $white-theme;
+  text-transform: uppercase;
+  line-height: 2;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
 }
 
 .main-head {
-    font-size: 2.2rem;
-    line-height: 50px;
-    text-transform: uppercase;
-    color: $white-theme;
-    margin-bottom: 2rem;
+  font-size: 2.2rem;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: $white-theme;
+  margin-bottom: 2rem;
+}
+
+.backgroun-header {
+  font-size: 4rem;
+  text-transform: capitalize;
+  color: $dark-hover;
+  margin: 0;
+  z-index: -1;
+}
+
+.sub-heading {
+  font-size: 2rem;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: $black-theme;
 }
 
 @include smallScreens {
-    .hero-header {
-        font-size: 1.5rem;
-        line-height: 1.6;
-        margin-bottom: 1.5rem;
-    }
+  .hero-header {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .backgroun-header {
+    font-size: 3rem;
+  }
+
+  .sub-heading {
+    font-size: 1.5rem;
+  }
 }
 
 @include exSmallScreens {
-    .hero-header {
-        font-size: 1.5rem;
-        line-height: 1.6;
-        margin-bottom: 1.5rem;
-    }
+  .hero-header {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .backgroun-header {
+    font-size: 3rem;
+  }
+
+  .sub-heading {
+    font-size: 1.5rem;
+  }
 }
 // Text Styles
 
 // Button Styles
 
 .btn {
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    text-transform: capitalize;
-    border-radius: 50px;
-    min-width: 200px;
-    text-align: center;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  text-transform: capitalize;
+  border-radius: 50px;
+  min-width: 200px;
+  text-align: center;
 
-    &-primary {
-        background-color: $blue-theme;
-        color: $white-theme;
-        border: 2px solid $blue-theme;
-    }
+  &-primary {
+    background-color: $blue-theme;
+    color: $white-theme;
+    border: 2px solid $blue-theme;
+  }
 
-    &-secondary {
-        background-color: transparent;
-        border: 2px solid $white-theme;
-        color: $white-theme;
-    }
+  &-secondary {
+    background-color: transparent;
+    border: 2px solid $white-theme;
+    color: $white-theme;
+  }
 
-    &-dark {
-        background-color: $black-theme;
-        color: $white-theme;
-        border: 2px solid $black-theme;
-    }
+  &-dark {
+    background-color: $black-theme;
+    color: $white-theme;
+    border: 2px solid $black-theme;
+  }
 }
 
 @include largScreens {
 }
 
 @include smallScreens {
-    .btn {
-        padding: 0.6rem 1rem;
-    }
+  .btn {
+    padding: 0.6rem 1rem;
+  }
 }
 
 @include exSmallScreens {
-    .btn {
-        padding: 0.6rem 1rem;
-        min-width: 150px;
-    }
+  .btn {
+    padding: 0.6rem 1rem;
+    min-width: 150px;
+  }
 }
 // Button Styles
 
 // Stiky Header General Styles
 /* The sticky class is added to the header with JS when it reaches its scroll position */
 .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: $white-theme;
-    z-index: 1;
-  }
-  
-  /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 102px;
-  }
-// Stiky Header General Styles
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $white-theme;
+  z-index: 1;
+}
 
+/* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 102px;
+}
+// Stiky Header General Styles
 
 // Section Header
 .section-header {
-    padding: 2rem;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 
-    .section-headline {
-        font-family: 'Montserrat', sans-serif;
-        text-transform: capitalize;
-        font-weight: 800;
-        font-size: 3rem;
-        margin-bottom: 1rem;
-    }
+  .section-headline {
+    font-family: "Montserrat", sans-serif;
+    text-transform: capitalize;
+    font-weight: 800;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
 
-    .theme-line {
-        width: 200px;
-        height: 5px;
-        background-color: $blue-theme;
-        margin-bottom: 2rem;
-    }
+  .theme-line {
+    width: 200px;
+    height: 5px;
+    background-color: $blue-theme;
+    margin-bottom: 2rem;
+  }
 
-    .section-para {
-        font-size: 1.5rem;
-        font-family: 'Open Sans', sans-serif;
-        line-height: 40px;
-        font-weight: 400;
-        margin-bottom: 2rem;
-    }
+  .section-para {
+    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif;
+    line-height: 40px;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
 }
 
 @include normalScreens {
-    .section-header {
-        padding: 1.5rem;
-        width: 100%;
-    
-        .section-headline {
-            font-size: 2rem;
-            margin-bottom: 0.8rem;
-        }
-    
-        .theme-line {
-            margin-bottom: 1.5rem;
-        }
-    
-        .section-para {
-            font-size: 1.2rem;
-            margin-bottom: 1.5rem;
-            line-height: 30px;
-        }
+  .section-header {
+    padding: 1.5rem;
+    width: 100%;
+
+    .section-headline {
+      font-size: 2rem;
+      margin-bottom: 0.8rem;
     }
+
+    .theme-line {
+      margin-bottom: 1.5rem;
+    }
+
+    .section-para {
+      font-size: 1.2rem;
+      margin-bottom: 1.5rem;
+      line-height: 30px;
+    }
+  }
 }
 
 @include smallScreens {
-    .section-header {
-        padding: 0;
-        width: 100%;
-    
-        .section-headline {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-    
-        .theme-line {
-            margin-bottom: 1rem;
-        }
-    
-        .section-para {
-            font-size: 1rem;
-            line-height: 24px;
-            margin-bottom: 1rem;
-        }
+  .section-header {
+    padding: 0;
+    width: 100%;
+
+    .section-headline {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
     }
+
+    .theme-line {
+      margin-bottom: 1rem;
+    }
+
+    .section-para {
+      font-size: 1rem;
+      line-height: 24px;
+      margin-bottom: 1rem;
+    }
+  }
 }
 
 @include exSmallScreens {
-    .section-header {
-        padding: 0;
-        width: 100%;
-    
-        .section-headline {
-            font-size: 2rem;
-            margin-bottom: 0.5rem;
-        }
-    
-        .theme-line {
-            margin-bottom: 1rem;
-        }
-    
-        .section-para {
-            font-size: 1rem;
-            line-height: 24px;
-            margin-bottom: 1rem;
-        }
+  .section-header {
+    padding: 0;
+    width: 100%;
+
+    .section-headline {
+      font-size: 2rem;
+      margin-bottom: 0.5rem;
     }
+
+    .theme-line {
+      margin-bottom: 1rem;
+    }
+
+    .section-para {
+      font-size: 1rem;
+      line-height: 24px;
+      margin-bottom: 1rem;
+    }
+  }
 }
 // Section Header
