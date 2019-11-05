@@ -602,6 +602,9 @@
 
 // ========== Why Us Section ==========
 .why-us {
+  overflow-x: hidden;
+  width: 100%;
+
   .grid-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
