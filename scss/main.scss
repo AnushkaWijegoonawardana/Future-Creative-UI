@@ -602,8 +602,8 @@
 
 // ========== Why Us Section ==========
 .why-us {
+  // width: 100%;
   overflow-x: hidden;
-  width: 100%;
 
   .grid-container {
     display: grid;
@@ -613,7 +613,11 @@
 
     .grid-text-container {
       background-color: $white-theme;
-      padding: 4rem 2rem;
+      padding: 4rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
       text-align: center;
 
       .sub-heading {
@@ -623,6 +627,8 @@
 
       .progress-section {
         padding: 1rem 0;
+        width: 100%;
+
         .progress-container {
           padding: 1rem 0;
           display: flex;
@@ -658,13 +664,16 @@
       background-position: center center;
       background-size: cover;
       background-repeat: no-repeat;
-      padding: 6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
 
       .testermonial-container {
         display: flex;
         align-items: center;
         justify-content: center;
-        height: 100%;
+        width: 60%;
+        height: 60%;
         text-align: center;
         padding: 1rem;
         background-color: $blue-gradient;
@@ -697,83 +706,38 @@
   }
 }
 
-@include normalScreens {
+@include largScreens {
   .why-us {
     .grid-container {
-      grid-template-columns: 1fr 1fr;
-
       .grid-text-container {
-        padding: 2rem;
-
-        .sub-heading {
-          margin-bottom: 1.5rem;
-        }
+        padding: 3rem;
       }
 
       .grid-img-background {
-        padding: 2rem;
-
         .testermonial-container {
-          padding: 0.5rem;
-
-          .testemonial {
-            padding: 0.5rem;
-
-            .quote-icon {
-              font-size: 3rem;
-              line-height: 1;
-            }
-          }
+          width: 75%;
+          height: 75%;
         }
       }
     }
   }
 }
 
-@include smallScreens {
+@include normalScreens {
   .why-us {
     .grid-container {
       grid-template-columns: 1fr;
 
       .grid-text-container {
-        padding: 1.5rem;
-
-        .sub-heading {
-          margin-bottom: 1rem;
-          margin-top: -3rem;
-        }
-
-        .progress-section {
-          padding: 0.5rem 0;
-
-          .progress-container {
-            padding: 0.5rem 0;
-          }
-        }
+        padding: 3rem;
       }
 
       .grid-img-background {
-        padding: 2rem;
+        height: 30vh;
 
         .testermonial-container {
-          padding: 0.5rem;
-
-          .testemonial {
-            padding: 0.5rem;
-
-            .quote-icon {
-              font-size: 2rem;
-              line-height: 1;
-            }
-
-            .testermonial-quote {
-              font-size: 1rem;
-            }
-
-            .testermoianl-name {
-              font-size: 0.8rem;
-            }
-          }
+          width: 80%;
+          height: 70%;
         }
       }
     }
@@ -786,11 +750,11 @@
       grid-template-columns: 1fr;
 
       .grid-text-container {
-        padding: 1.5rem;
+        padding: 2rem;
 
         .sub-heading {
-          margin-bottom: 1rem;
           margin-top: -3rem;
+          margin-bottom: 1.5rem;
         }
 
         .progress-section {
@@ -803,16 +767,16 @@
       }
 
       .grid-img-background {
-        padding: 2rem;
+        height: 50vh;
 
         .testermonial-container {
-          padding: 0.5rem;
+          width: 80%;
+          height: 80%;
+          padding: 0.8rem;
 
           .testemonial {
-            padding: 0.5rem;
-
             .quote-icon {
-              font-size: 2rem;
+              font-size: 3rem;
               line-height: 1;
             }
 
@@ -829,4 +793,5 @@
     }
   }
 }
+
 // ========== Why Us Section ==========
