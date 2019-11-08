@@ -914,6 +914,26 @@
   }
 }
 
+@include smallScreens {
+  .portfolio {
+    .section-header {
+      padding: 2rem 0;
+    }
+  
+    .portfolio-btn-container {
+      padding: 0;
+      flex-direction: column;
+    }
+  
+    .portfolio-container {
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}
+
 @include exSmallScreens {
   .portfolio {
     .section-header {
