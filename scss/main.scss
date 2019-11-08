@@ -744,6 +744,56 @@
   }
 }
 
+@include smallScreens {
+  .why-us {
+    .grid-container {
+      grid-template-columns: 1fr;
+
+      .grid-text-container {
+        padding: 2rem;
+
+        .sub-heading {
+          margin-top: -3rem;
+          margin-bottom: 1.5rem;
+        }
+
+        .progress-section {
+          padding: 0.5rem 0;
+
+          .progress-container {
+            padding: 0.5rem 0;
+          }
+        }
+      }
+
+      .grid-img-background {
+        height: 50vh;
+
+        .testermonial-container {
+          width: 80%;
+          height: 80%;
+          padding: 0.8rem;
+
+          .testemonial {
+            .quote-icon {
+              font-size: 3rem;
+              line-height: 1;
+            }
+
+            .testermonial-quote {
+              font-size: 1rem;
+            }
+
+            .testermoianl-name {
+              font-size: 0.8rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @include exSmallScreens {
   .why-us {
     .grid-container {
@@ -795,3 +845,141 @@
 }
 
 // ========== Why Us Section ==========
+
+// ========== Portfolio Section ==========
+.portfolio {
+  .section-header {
+    padding: 5rem 0;
+  }
+
+  .portfolio-btn-container {
+    border-top: 1px solid rgba($dark-hover, 0.2);
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .portfolio-container {
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+
+      a {
+        position: relative;
+
+        img {
+          display: block;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@include largScreens {
+  .portfolio {
+    .section-header {
+      padding: 3rem 0;
+    }
+  
+    .portfolio-btn-container {
+      padding: 1.5rem 0;
+    }
+  
+    .portfolio-container {
+      .gallery {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  }
+}
+
+@include normalScreens {
+  .portfolio {
+    .section-header {
+      padding: 2.5rem 0;
+    }
+  
+    .portfolio-btn-container {
+      padding: 1.2rem 0;
+    }
+  
+    .portfolio-container {
+      .gallery {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  }
+}
+
+@include exSmallScreens {
+  .portfolio {
+    .section-header {
+      padding: 2rem 0;
+    }
+  
+    .portfolio-btn-container {
+      padding: 0;
+      flex-direction: column;
+    }
+  
+    .portfolio-container {
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  }
+}
+// ========== Portfolio Section ==========
+
+// ========== Our Achivements Section ==========
+.achivements {
+  padding: 5rem 0;
+  background-image: url("../images/Achivement-Banner.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  .achivement-section-header {
+    padding-bottom: 2.5rem;
+
+    .box-container {
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+
+      .sub-heading {
+        color: $blue-theme;
+        margin-bottom: 2rem;
+      }
+
+      .hero-header {
+        line-height: 2.5rem;
+        margin-bottom: 3rem;
+      }
+    }
+  }
+
+  .achivement-content {
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      align-items: center;
+      justify-content: center;
+      grid-gap: 2rem;
+
+      // // .achivemnet-box {
+      // //   display: flex;
+      // //   flex-direction: column;
+      // //   align-items: center;
+      // //   justify-content: center;
+      // }
+    }
+  }
+}
+// ========== Our Achivements Section ==========

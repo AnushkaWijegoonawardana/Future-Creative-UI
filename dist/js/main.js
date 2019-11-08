@@ -27,3 +27,39 @@ function openNav() {
 function closeNav() {
   document.getElementById("overlayer-menu").style.width = "0%";
 }
+
+// Simple Light Box
+$(function() {
+  const $gallery = $(".gallery a").simpleLightbox();
+});
+
+// Portfolio Filter
+const listItems = document.querySelectorAll(".portfolio-btn-container li");
+const allimages = document.querySelectorAll(".portfolio-container .gallery a");
+
+function toggleActiveClass(active) {
+  listItems.forEach(item => {
+    item.classList.remove("active");
+  });
+  active.classList.add("active");
+}
+
+function toggleimages(dataClass) {
+  if (dataClass === "all") {
+    for (let i = 0; i < allimages.length; i++) {
+      allimages[i].style.display = "block";
+    }
+  } else {
+    for (let i = 0; i < allimages.length; i++)
+      allimages[i].dataset.class === dataClass
+        ? (allimages[i].style.display = "block")
+        : (allimages[i].style.display = "none");
+  }
+}
+
+for (let i = 0; i < listItems.length; i++) {
+  listItems[i].addEventListener("click", function() {
+    toggleActiveClass(listItems[i]);
+    toggleimages(listItems[i].dataset.class);
+  });
+}

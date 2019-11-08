@@ -39,6 +39,10 @@ a {
 img {
   width: 100%;
 }
+
+li {
+  list-style-type: none;
+}
 // General Style Resettings
 
 .box-container {
@@ -47,6 +51,10 @@ img {
 }
 
 // Text Styles
+.blue-theme {
+  color: $blue-theme;
+}
+
 .hero-header {
   font-size: 2rem;
   color: $white-theme;
@@ -122,29 +130,57 @@ img {
   font-weight: 400;
   text-transform: capitalize;
   border-radius: 50px;
-  min-width: 200px;
   text-align: center;
+  cursor: pointer;
 
   &-primary {
     background-color: $blue-theme;
     color: $white-theme;
     border: 2px solid $blue-theme;
+    min-width: 200px;
   }
 
   &-secondary {
     background-color: transparent;
     border: 2px solid $white-theme;
     color: $white-theme;
+    min-width: 200px;
   }
 
   &-dark {
     background-color: $black-theme;
     color: $white-theme;
     border: 2px solid $black-theme;
+    min-width: 200px;
+  }
+
+  &-portfolio {
+    font-size: 1.2rem;
+    color: $black-theme;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+
+    &:hover {
+      background-color: $blue-theme;
+      color: $white-theme;
+    }
   }
 }
 
 @include largScreens {
+  .btn {
+    &-portfolio {
+      font-size: 1rem;
+    }
+  }
+}
+
+@include normalScreens {
+  .btn {
+    &-portfolio {
+      font-size: 1rem;
+    }
+  }
 }
 
 @include smallScreens {
@@ -157,6 +193,11 @@ img {
   .btn {
     padding: 0.6rem 1rem;
     min-width: 150px;
+
+    &-portfolio {
+      font-size: 0.8rem;
+      margin-bottom: 0.5rem;
+    }
   }
 }
 // Button Styles
@@ -178,6 +219,12 @@ img {
 // Stiky Header General Styles
 
 // Section Header
+.theme-line {
+  width: 200px;
+  height: 5px;
+  background-color: $blue-theme;
+  margin-bottom: 2rem;
+}
 .section-header {
   padding: 2rem;
   text-align: center;
@@ -194,12 +241,7 @@ img {
     margin-bottom: 1rem;
   }
 
-  .theme-line {
-    width: 200px;
-    height: 5px;
-    background-color: $blue-theme;
-    margin-bottom: 2rem;
-  }
+  
 
   .section-para {
     font-size: 1.5rem;
