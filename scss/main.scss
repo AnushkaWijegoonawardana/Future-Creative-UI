@@ -848,6 +848,7 @@
 
 // ========== Portfolio Section ==========
 .portfolio {
+  overflow-x: hidden;
   .section-header {
     padding: 5rem 0;
   }
@@ -957,6 +958,7 @@
 
 // ========== Our Achivements Section ==========
 .achivements {
+  overflow-x: hidden;
   padding: 5rem 0;
   background-image: url("../images/Achivement-Banner.jpg");
   background-position: center center;
