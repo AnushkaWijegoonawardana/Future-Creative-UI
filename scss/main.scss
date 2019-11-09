@@ -1165,6 +1165,7 @@
 // ========== Our Plan Section ==========
 .plans {
   padding: 5rem 0;
+  overflow-x: hidden;
 
   .plan-container {
     padding-top: 3rem;
@@ -1428,7 +1429,7 @@
 // ========== Contact Us Section ==========
 .contact {
   overflow-x: hidden;
-  
+
   .section-header {
     padding: 5rem;
   }
