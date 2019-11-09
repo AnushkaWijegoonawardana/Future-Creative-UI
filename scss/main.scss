@@ -1161,3 +1161,266 @@
   }
 }
 // ========== Our Achivements Section ==========
+
+// ========== Our Plan Section ==========
+.plans {
+  padding: 5rem 0;
+
+  .plan-container {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+
+    .plan-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      grid-gap: 3rem;
+
+      .plan-items {
+        padding: 2rem;
+        background-color: $light-hover;
+        color: $black-theme;
+        border-radius: 10px;
+        text-transform: capitalize;
+
+        &:hover {
+          color: $white-theme;
+          background-color: $blue-theme;
+
+          .btn {
+            color: $white-theme;
+            border-color: $white-theme;
+          }
+        }
+
+        .plan-header {
+          font-size: 2rem;
+          font-weight: 700;
+          padding-bottom: 1rem;
+        }
+
+        .plan-subhead {
+          font-size: 1.3rem;
+          font-family: 'Montserrat', sans-serif;
+          font-weight: 400;
+          padding-bottom: 2rem;
+        }
+
+        .price-tag {
+          padding: 1rem 0 2rem 0; 
+          font-size: 3rem;
+          font-family: 'Poppins', sans-serif;
+
+          span {
+            font-size: 2rem;
+          }
+        }
+
+        .plan-services {
+          padding: 1rem 0 2rem 0;
+          width: 100%;
+
+          .services-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 70%;
+            margin: auto;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+            font-weight: 400;
+
+            i {
+              font-size: 1.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include largScreens {
+  .plans {
+    padding: 4rem 0;
+  
+    .plan-container {
+  
+      .plan-grid {
+        grid-gap: 1rem;
+  
+        .plan-items {
+          padding: 1rem;
+  
+          &:hover {
+            color: $white-theme;
+            background-color: $blue-theme;
+          }
+  
+          .plan-header {
+            font-size: 1.6rem;
+            padding-bottom: 0.8rem;
+          }
+  
+          .plan-subhead {
+            font-size: 1rem;
+            padding-bottom: 1.5rem;
+          }
+  
+          .price-tag {
+            padding: 0.8rem 0 1.6rem 0; 
+            font-size: 2rem;
+  
+            span {
+              font-size: 1.2rem;
+            }
+          }
+  
+          .plan-services {
+            padding: 0.8rem 0 1.6rem 0;
+            width: 100%;
+  
+            .services-item {
+              font-size: 1rem;
+              font-weight: 400;
+  
+              i {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include normalScreens {
+  .plans {
+    padding: 2.5rem 0;
+  
+    .plan-container {
+      padding-top: 1.5rem;
+      padding-bottom: 1rem;
+  
+      .plan-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 3rem;
+
+        .plan-items {
+          width: 70%;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+
+@include smallScreens {
+  .plans {
+    padding: 2rem 0;
+  
+    .plan-container {
+      padding-top: 1.5rem;
+      padding-bottom: 1rem;
+  
+      .plan-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2rem;
+  
+        .plan-items {
+          padding: 1rem;
+  
+          .plan-header {
+            font-size: 1.2rem;
+            padding-bottom: 0.5rem;
+          }
+  
+          .plan-subhead {
+            font-size: 1rem;
+            padding-bottom: 1rem;
+          }
+  
+          .price-tag {
+            padding: 0.5rem 0 1rem 0; 
+            font-size: 1.8rem;
+  
+            span {
+              font-size: 1.2rem;
+            }
+          }
+  
+          .plan-services {
+            padding: 0.5rem 0 1rem 0;
+  
+            .services-item {
+              width: 80%;
+              margin-bottom: 0.5rem;
+              font-size: 1rem;
+  
+              i {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include exSmallScreens {
+  .plans {
+    padding: 2rem 0;
+  
+    .plan-container {
+      padding-top: 1.5rem;
+      padding-bottom: 1rem;
+  
+      .plan-grid {
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2rem;
+  
+        .plan-items {
+          padding: 1rem;
+  
+          .plan-header {
+            font-size: 1.2rem;
+            padding-bottom: 0.5rem;
+          }
+  
+          .plan-subhead {
+            font-size: 1rem;
+            padding-bottom: 1rem;
+          }
+  
+          .price-tag {
+            padding: 0.5rem 0 1rem 0; 
+            font-size: 1.8rem;
+  
+            span {
+              font-size: 1.2rem;
+            }
+          }
+  
+          .plan-services {
+            padding: 0.5rem 0 1rem 0;
+  
+            .services-item {
+              width: 80%;
+              margin-bottom: 0.5rem;
+              font-size: 1rem;
+  
+              i {
+                font-size: 1.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// ========== Our Plan Section ==========

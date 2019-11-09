@@ -181,6 +181,15 @@ li {
       color: $white-theme;
     }
   }
+
+  &-priceplan {
+    font-size: 1rem;
+    color: $black-theme;
+    border: 1px solid $black-theme;
+    margin-bottom: 1.5rem;
+    min-width: 150px;
+    font-weight: 700;
+  }
 }
 
 @include largScreens {
