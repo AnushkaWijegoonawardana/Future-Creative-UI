@@ -88,6 +88,22 @@ li {
   color: $black-theme;
 }
 
+@include normalScreens {
+  .hero-header {
+    font-size: 1.5rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .backgroun-header {
+    font-size: 3rem;
+  }
+
+  .sub-heading {
+    font-size: 1.5rem;
+  }
+}
+
 @include smallScreens {
   .hero-header {
     font-size: 1.5rem;
