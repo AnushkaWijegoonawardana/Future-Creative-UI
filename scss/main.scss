@@ -1424,3 +1424,200 @@
   }
 }
 // ========== Our Plan Section ==========
+
+// ========== Contact Us Section ==========
+.contact {
+  .section-header {
+    padding: 5rem;
+  }
+
+  .contact-map-background {
+    .map-grid {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      align-items: center;
+      justify-content: center;
+      min-height: 60vh;
+      height: auto;
+
+      .form-container {
+        padding: 5rem 2rem;
+        background-color: $blue-theme;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .sub-heading{
+          color: $white-theme;
+          margin-bottom: 3rem;
+        }
+
+        form {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          margin-bottom: 3rem !important;
+          width: 70%;
+          margin: 0 auto;
+
+          input {
+            width: 100%;
+            background-color: transparent;
+            padding: 1rem 2rem;
+            margin-bottom: 2rem;
+            border: none;
+            border-bottom: 2px solid $white-theme;
+            color: $white-theme;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 400;
+            font-size: 1.2rem;
+            text-align: center;
+          }
+        }
+      }
+
+      .map-container{
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+@include largScreens {
+  .contact {
+    .section-header {
+      padding: 4rem;
+    }
+    
+    .contact-map-background {
+      .map-grid {
+        grid-template-columns: 1fr 1fr;
+  
+        .form-container {
+          padding: 3rem 1rem;
+        }
+      }
+    }
+  }
+}
+
+@include normalScreens {
+  .contact {
+    .section-header {
+      padding: 3rem;
+    }
+    
+    .contact-map-background {
+      .map-grid {
+        grid-template-columns: 1fr 1fr;
+        min-height: 50vh;
+  
+        .form-container {
+          padding: 2rem 1rem;
+  
+          .sub-heading{
+            margin-bottom: 1.5rem;
+          }
+  
+          form {
+            margin-bottom: 1.5rem !important;
+            width: 80%;
+  
+            input {
+              margin-bottom: 1.5rem;
+              font-size: 1rem;
+            }
+          }
+        }
+  
+        .map-container{
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@include smallScreens {
+  .contact {
+    .section-header {
+      padding: 2rem 0;
+      width: 100%;
+    }
+    
+    .contact-map-background {
+      .map-grid {
+        grid-template-columns: 1fr;
+  
+        .form-container {
+          min-height: 60vh;
+          padding: 1.5rem;
+  
+          .sub-heading{
+            margin-bottom: 1rem;
+          }
+  
+          form {
+            margin-bottom: 1.5rem !important;
+            width: 80%;
+  
+            input {
+              padding: 0.8rem 1.6rem;
+              margin-bottom: 1rem;
+              font-size: 0.8rem;
+            }
+          }
+        }
+  
+        .map-container{
+          min-height: 50vh;
+        }
+      }
+    }
+  }
+}
+
+@include exSmallScreens {
+  .contact {
+    .section-header {
+      padding: 2rem 0;
+      width: 100%;
+    }
+    
+    .contact-map-background {
+      .map-grid {
+        grid-template-columns: 1fr;
+  
+        .form-container {
+          min-height: 60vh;
+          padding: 1.5rem;
+  
+          .sub-heading{
+            margin-bottom: 1rem;
+          }
+  
+          form {
+            margin-bottom: 1.5rem !important;
+            width: 80%;
+  
+            input {
+              padding: 0.8rem 1.6rem;
+              margin-bottom: 1rem;
+              font-size: 0.8rem;
+            }
+          }
+        }
+  
+        .map-container{
+          min-height: 50vh;
+        }
+      }
+    }
+  }
+}
+// ========== Contact Us Section ==========
